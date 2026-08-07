@@ -12,7 +12,7 @@ Welcome to my computer networking practical lab repository! This repository show
 | **Subnetting** | Variable Length Subnet Masking | VLSM & IP Allocation | <img src="./02-Subnetting/VLSM%20images/vlsm%201.png" width="280px" alt="VLSM Topology"> | [📁 Lab File (`.pkt`)](./02-Subnetting/VLSM%20lab.pkt)<br>[🖼️ All 4 Screenshots](./02-Subnetting/VLSM%20images/) |
 | **Routing** | Routing Information Protocol | RIP v2 Distance Vector | <img src="./03-Routing/RIP%20images/rip1.jpg" width="280px" alt="RIP Topology"> | [📁 Lab File (`.pkt`)](./03-Routing/RIP%20Lab.pkt)<br>[🖼️ All 4 Screenshots](./03-Routing/RIP%20images/) |
 | **Routing** | Open Shortest Path First | OSPF Single-Area Link-State | <img src="./03-Routing/OSPF%20images/ospf1.jpg" width="280px" alt="OSPF Topology"> | [📁 Lab File (`.pkt`)](./03-Routing/ospf%20lab.pkt)<br>[🖼️ All 4 Screenshots](./03-Routing/OSPF%20images/) |
-| **Routing** | Dynamic Routing Setup | Multi-Router Dynamic Setup | *(Add Screenshot)* | [📁 Lab File (`.pkt`)](./03-Routing/dynamic%20routing.pkt) |
+| **Routing** | Dynamic Routing Setup | EIGRP / Multi-Router Setup | <img src="./03-Routing/EIGRP%20images/eigrp1.jpg" width="280px" alt="EIGRP Topology"> | [📁 Lab File (`.pkt`)](./03-Routing/dynamic%20routing.pkt)<br>[🖼️ All 4 Screenshots](./03-Routing/EIGRP%20images/) |
 
 ---
 
