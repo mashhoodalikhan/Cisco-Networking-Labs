@@ -8,8 +8,8 @@ Welcome to my computer networking practical lab repository! This repository show
 
 | Category | Lab Topic | Protocol / Concept | Primary Topology Preview | Lab Files & Visuals |
 | :--- | :--- | :--- | :--- | :--- |
-| **Switching** | Virtual Local Area Network | VLAN Segmentation & Trunking (802.1Q) | <img src="./01-Switching/VLAN%20images/vlan%201.png" width="280px" alt="VLAN Topology"> | [📁 Lab File (`.pkt`)](./01-Switching/VLAN%20lab.pkt)<br>[🖼️ All 5 CLI Screenshots](./01-Switching/VLAN%20images/) |
-| **Subnetting** | Variable Length Subnet Masking | VLSM & IP Allocation | *(Add Screenshot)* | [📁 Lab File (`.pkt`)](./02-Subnetting/VLSM%20lab.pkt) |
+| **Switching** | Virtual Local Area Network | VLAN Segmentation & Trunking (802.1Q) | <img src="./01-Switching/VLAN%20images/vlan%201.png" width="280px" alt="VLAN Topology"> | [📁 Lab File (`.pkt`)](./01-Switching/VLAN%20lab.pkt)<br>[🖼️ All 5 Screenshots](./01-Switching/VLAN%20images/) |
+| **Subnetting** | Variable Length Subnet Masking | VLSM & IP Allocation | <img src="./02-Subnetting/VLSM%20images/vlsm%201.png" width="280px" alt="VLSM Topology"> | [📁 Lab File (`.pkt`)](./02-Subnetting/VLSM%20lab.pkt)<br>[🖼️ All 4 Screenshots](./02-Subnetting/VLSM%20images/) |
 | **Routing** | Routing Information Protocol | RIP v2 Distance Vector | *(Add Screenshot)* | [📁 Lab File (`.pkt`)](./03-Routing/RIP%20Lab.pkt) |
 | **Routing** | Open Shortest Path First | OSPF Single-Area Link-State | *(Add Screenshot)* | [📁 Lab File (`.pkt`)](./03-Routing/ospf%20lab.pkt) |
 | **Routing** | Dynamic Routing Setup | Multi-Router Dynamic Setup | *(Add Screenshot)* | [📁 Lab File (`.pkt`)](./03-Routing/dynamic%20routing.pkt) |
