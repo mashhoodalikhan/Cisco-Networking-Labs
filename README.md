@@ -10,7 +10,7 @@ Welcome to my computer networking practical lab repository! This repository show
 | :--- | :--- | :--- | :--- | :--- |
 | **Switching** | Virtual Local Area Network | VLAN Segmentation & Trunking (802.1Q) | <img src="./01-Switching/VLAN%20images/vlan%201.png" width="280px" alt="VLAN Topology"> | [📁 Lab File (`.pkt`)](./01-Switching/VLAN%20lab.pkt)<br>[🖼️ All 5 Screenshots](./01-Switching/VLAN%20images/) |
 | **Subnetting** | Variable Length Subnet Masking | VLSM & IP Allocation | <img src="./02-Subnetting/VLSM%20images/vlsm%201.png" width="280px" alt="VLSM Topology"> | [📁 Lab File (`.pkt`)](./02-Subnetting/VLSM%20lab.pkt)<br>[🖼️ All 4 Screenshots](./02-Subnetting/VLSM%20images/) |
-| **Routing** | Routing Information Protocol | RIP v2 Distance Vector | <img src="./03-Routing/RIP%20images/rip%201.jpg" width="280px" alt="RIP Topology"> | [📁 Lab File (`.pkt`)](./03-Routing/RIP%20Lab.pkt)<br>[🖼️ All 4 Screenshots](./03-Routing/RIP%20images/) |
+| **Routing** | Routing Information Protocol | RIP v2 Distance Vector | <img src="./03-Routing/RIP%20images/RIP%201.JPG" width="280px" alt="RIP Topology"> | [📁 Lab File (`.pkt`)](./03-Routing/RIP%20Lab.pkt)<br>[🖼️ All 4 Screenshots](./03-Routing/RIP%20images/) |
 | **Routing** | Open Shortest Path First | OSPF Single-Area Link-State | *(Add Screenshot)* | [📁 Lab File (`.pkt`)](./03-Routing/ospf%20lab.pkt) |
 | **Routing** | Dynamic Routing Setup | Multi-Router Dynamic Setup | *(Add Screenshot)* | [📁 Lab File (`.pkt`)](./03-Routing/dynamic%20routing.pkt) |
 
