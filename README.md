@@ -1,21 +1,23 @@
-# 🌐 Cisco Packet Tracer - Hands-on Networking & Security Labs
+# 🌐 Cisco Packet Tracer — Hands-on Networking & Security Labs
 
-Welcome to my **Computer Networking Practical Lab Repository**!
-This repository contains Cisco Packet Tracer labs covering **switching, subnetting, VLANs, trunking, and dynamic routing protocols**.
+Welcome to my **Computer Networking Practical Lab Repository**.
 
-These labs were created through hands-on practice to build a strong understanding of **network configuration, troubleshooting, routing, and network segmentation**.
+This repository documents my hands-on practice with **Cisco Packet Tracer**, covering switching, VLANs, Inter-VLAN Routing, subnetting, and dynamic routing protocols.
+
+The goal of this repository is to build practical skills in **network configuration, IP addressing, routing, network segmentation, troubleshooting, and Cisco IOS CLI**.
 
 ---
 
 ## 📌 Repository Overview & Visual Proofs
 
-| Category       | Lab Topic                                  | Protocol / Concept                    | Topology Preview                                                                         | Lab Files & Visuals                                                                                           |
-| :------------- | :----------------------------------------- | :------------------------------------ | :--------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------ |
-| **Switching**  | Virtual Local Area Network                 | VLAN Segmentation & Trunking (802.1Q) | <img src="./01-Switching/VLAN%20images/vlan%201.png" width="280px" alt="VLAN Topology">  | [📁 Lab File (`.pkt`)](./01-Switching/VLAN%20lab.pkt)<br>[🖼️ Screenshots](./01-Switching/VLAN%20images/)     |
-| **Subnetting** | Variable Length Subnet Masking             | VLSM & IP Address Allocation          | <img src="./02-Subnetting/VLSM%20images/vlsm%201.png" width="280px" alt="VLSM Topology"> | [📁 Lab File (`.pkt`)](./02-Subnetting/VLSM%20lab.pkt)<br>[🖼️ Screenshots](./02-Subnetting/VLSM%20images/)   |
-| **Routing**    | Routing Information Protocol               | RIPv2 Distance Vector                 | <img src="./03-Routing/RIP%20images/rip1.jpg" width="280px" alt="RIP Topology">          | [📁 Lab File (`.pkt`)](./03-Routing/RIP%20Lab.pkt)<br>[🖼️ Screenshots](./03-Routing/RIP%20images/)           |
-| **Routing**    | Open Shortest Path First                   | OSPF Single-Area Link-State           | <img src="./03-Routing/OSPF%20images/ospf1.jpg" width="280px" alt="OSPF Topology">       | [📁 Lab File (`.pkt`)](./03-Routing/ospf%20lab.pkt)<br>[🖼️ Screenshots](./03-Routing/OSPF%20images/)         |
-| **Routing**    | Enhanced Interior Gateway Routing Protocol | EIGRP / Multi-Router Setup            | <img src="./03-Routing/EIGRP%20images/eigrp1.jpg" width="280px" alt="EIGRP Topology">    | [📁 Lab File (`.pkt`)](./03-Routing/dynamic%20routing.pkt)<br>[🖼️ Screenshots](./03-Routing/EIGRP%20images/) |
+| Category       | Lab Topic                                  | Protocol / Concept                             | Topology Preview                                                                                              | Lab Files & Visuals                                                                                                  |
+| :------------- | :----------------------------------------- | :--------------------------------------------- | :------------------------------------------------------------------------------------------------------------ | :------------------------------------------------------------------------------------------------------------------- |
+| **Switching**  | Virtual Local Area Network                 | VLAN Segmentation & Trunking (802.1Q)          | <img src="./01-Switching/VLAN%20images/vlan%201.png" width="280px" alt="VLAN Topology">                       | [📁 Lab File](./01-Switching/VLAN%20lab.pkt)<br>[🖼️ Screenshots](./01-Switching/VLAN%20images/)                     |
+| **Switching**  | Inter-VLAN Routing                         | Router-on-a-Stick, 802.1Q & VLAN Communication | <img src="./01-Switching/inter%20VLAN%20images/inter%20vlan%201.png" width="280px" alt="Inter-VLAN Topology"> | [📁 Lab File](./01-Switching/Inter-VLAN%20Routing.pkt)<br>[🖼️ 2 Screenshots](./01-Switching/inter%20VLAN%20images/) |
+| **Subnetting** | Variable Length Subnet Masking             | VLSM & IP Address Allocation                   | <img src="./02-Subnetting/VLSM%20images/vlsm%201.png" width="280px" alt="VLSM Topology">                      | [📁 Lab File](./02-Subnetting/VLSM%20lab.pkt)<br>[🖼️ Screenshots](./02-Subnetting/VLSM%20images/)                   |
+| **Routing**    | Routing Information Protocol               | RIPv2 Distance Vector                          | <img src="./03-Routing/RIP%20images/rip1.jpg" width="280px" alt="RIP Topology">                               | [📁 Lab File](./03-Routing/RIP%20Lab.pkt)<br>[🖼️ Screenshots](./03-Routing/RIP%20images/)                           |
+| **Routing**    | Open Shortest Path First                   | OSPF Single-Area Link-State                    | <img src="./03-Routing/OSPF%20images/ospf1.jpg" width="280px" alt="OSPF Topology">                            | [📁 Lab File](./03-Routing/ospf%20lab.pkt)<br>[🖼️ Screenshots](./03-Routing/OSPF%20images/)                         |
+| **Routing**    | Enhanced Interior Gateway Routing Protocol | EIGRP / Multi-Router Setup                     | <img src="./03-Routing/EIGRP%20images/eigrp1.jpg" width="280px" alt="EIGRP Topology">                         | [📁 Lab File](./03-Routing/dynamic%20routing.pkt)<br>[🖼️ Screenshots](./03-Routing/EIGRP%20images/)                 |
 
 ---
 
@@ -26,7 +28,13 @@ Cisco-Packet-Tracer-Labs/
 │
 ├── 01-Switching/
 │   ├── VLAN lab.pkt
-│   └── VLAN images/
+│   ├── VLAN images/
+│   │   └── vlan 1.png
+│   │
+│   ├── Inter-VLAN Routing.pkt
+│   └── inter VLAN images/
+│       ├── inter vlan 1.png
+│       └── inter vlan 2.png
 │
 ├── 02-Subnetting/
 │   ├── VLSM lab.pkt
@@ -46,9 +54,11 @@ Cisco-Packet-Tracer-Labs/
 
 ---
 
-# 🛠️ Key CLI Configurations Covered
+# 🛠️ Key CLI Configurations
 
-## 1. VLAN & Trunking Setup
+## 1. VLAN & Trunking
+
+VLANs (**Virtual Local Area Networks**) logically divide a network into separate broadcast domains.
 
 ### Create VLAN
 
@@ -76,7 +86,7 @@ Switch(config-if)# switchport mode trunk
 Switch(config-if)# exit
 ```
 
-### Verify VLAN Configuration
+### Verify VLANs
 
 ```bash
 Switch# show vlan brief
@@ -90,11 +100,90 @@ Switch# show interfaces trunk
 
 ---
 
-## 2. VLSM & Sub-Interface Setup
+# 2. Inter-VLAN Routing — Router-on-a-Stick
 
-VLSM (**Variable Length Subnet Masking**) allows different subnet sizes to be assigned according to the number of required hosts.
+Inter-VLAN Routing allows devices belonging to **different VLANs** to communicate with each other through a Layer 3 device.
 
-### Configure Sub-Interface
+This lab uses the **Router-on-a-Stick** method, where one physical router interface is divided into multiple sub-interfaces.
+
+Each sub-interface is associated with a VLAN and acts as its **default gateway**.
+
+### Configure Router Sub-Interfaces
+
+```bash
+Router# configure terminal
+
+Router(config)# interface GigabitEthernet 0/0.10
+Router(config-subif)# encapsulation dot1Q 10
+Router(config-subif)# ip address 192.168.1.1 255.255.255.0
+Router(config-subif)# exit
+
+Router(config)# interface GigabitEthernet 0/0.20
+Router(config-subif)# encapsulation dot1Q 20
+Router(config-subif)# ip address 192.168.2.1 255.255.255.0
+Router(config-subif)# exit
+
+Router(config)# interface GigabitEthernet 0/0.30
+Router(config-subif)# encapsulation dot1Q 30
+Router(config-subif)# ip address 192.168.3.1 255.255.255.0
+Router(config-subif)# exit
+```
+
+### Configure Switch Trunk
+
+```bash
+Switch# configure terminal
+Switch(config)# interface GigabitEthernet 0/1
+Switch(config-if)# switchport mode trunk
+Switch(config-if)# exit
+```
+
+### Verify VLANs
+
+```bash
+Switch# show vlan brief
+```
+
+### Verify Trunk
+
+```bash
+Switch# show interfaces trunk
+```
+
+### Verify Router Interfaces
+
+```bash
+Router# show ip interface brief
+```
+
+### Verify Routing Table
+
+```bash
+Router# show ip route
+```
+
+### Test Inter-VLAN Connectivity
+
+```bash
+PC> ping <destination-ip>
+```
+
+A successful ping between devices in different VLANs confirms that **Inter-VLAN Routing** is functioning correctly.
+
+### 🖼️ Lab Screenshots
+
+<p align="center">
+  <img src="./01-Switching/inter%20VLAN%20images/inter%20vlan%201.png" width="45%" alt="Inter-VLAN Lab 1">
+  <img src="./01-Switching/inter%20VLAN%20images/inter%20vlan%202.png" width="45%" alt="Inter-VLAN Lab 2">
+</p>
+
+---
+
+# 3. VLSM & IP Address Allocation
+
+VLSM (**Variable Length Subnet Masking**) allows a network to use different subnet sizes according to the number of hosts required.
+
+### Configure Sub-Interfaces
 
 ```bash
 Router# configure terminal
@@ -124,9 +213,9 @@ Router# show ip route
 
 ---
 
-# 3. RIPv2 Dynamic Routing
+# 4. RIPv2 Dynamic Routing
 
-RIP (**Routing Information Protocol**) is a distance-vector routing protocol.
+RIP (**Routing Information Protocol**) is a distance-vector dynamic routing protocol.
 
 ### Configuration
 
@@ -150,21 +239,19 @@ Router# show ip protocols
 Router# show ip route
 ```
 
-Look for routes marked with:
+RIP-learned routes are identified by:
 
 ```text
 R
 ```
 
-`R` indicates a route learned through RIP.
-
 ---
 
-# 4. OSPF Single-Area Routing
+# 5. OSPF Single-Area Routing
 
 OSPF (**Open Shortest Path First**) is a link-state dynamic routing protocol.
 
-This lab uses **Area 0**, also known as the backbone area.
+This lab uses **Area 0**, the OSPF backbone area.
 
 ### Configuration
 
@@ -190,7 +277,7 @@ Router# show ip ospf neighbor
 Router# show ip route
 ```
 
-OSPF-learned routes normally appear with:
+OSPF-learned routes are identified by:
 
 ```text
 O
@@ -198,7 +285,7 @@ O
 
 ---
 
-# 5. EIGRP Configuration
+# 6. EIGRP Configuration
 
 EIGRP (**Enhanced Interior Gateway Routing Protocol**) is a dynamic routing protocol developed by Cisco.
 
@@ -227,7 +314,7 @@ Router# show ip eigrp neighbors
 Router# show ip route
 ```
 
-EIGRP-learned routes normally appear with:
+EIGRP-learned routes are identified by:
 
 ```text
 D
@@ -236,8 +323,6 @@ D
 ---
 
 # 🔍 Common Verification Commands
-
-These commands are useful for checking whether a Cisco Packet Tracer topology is working correctly.
 
 ### Check Interfaces
 
@@ -263,7 +348,7 @@ Router# show ip protocols
 Router# ping <destination-ip>
 ```
 
-### Trace the Path
+### Trace Network Path
 
 ```bash
 Router# traceroute <destination-ip>
@@ -297,7 +382,7 @@ Router# show ip eigrp neighbors
 
 # 🧪 Lab Verification Workflow
 
-After configuring a topology, use the following basic workflow:
+After configuring a topology, follow this general workflow:
 
 ```text
 1. Configure device interfaces
@@ -306,22 +391,28 @@ After configuring a topology, use the following basic workflow:
         ↓
 3. Configure VLANs / Sub-Interfaces
         ↓
-4. Configure routing protocol
+4. Configure trunk links
         ↓
-5. Verify interfaces
+5. Configure routing protocol
         ↓
-6. Verify routing table
+6. Verify interfaces
         ↓
-7. Check neighbors
+7. Verify VLANs and trunks
         ↓
-8. Test connectivity using ping
+8. Verify routing table
         ↓
-9. Use traceroute if required
+9. Check routing neighbors
+        ↓
+10. Test connectivity using ping
+        ↓
+11. Use traceroute for path verification
 ```
 
 ---
 
 # 📚 Concepts Practiced
+
+### Switching
 
 * VLAN Configuration
 * VLAN Segmentation
@@ -329,35 +420,56 @@ After configuring a topology, use the following basic workflow:
 * Trunk Ports
 * 802.1Q Encapsulation
 * Inter-VLAN Routing
+* Router-on-a-Stick
+* Router Sub-Interfaces
+* VLAN Communication
+
+### Subnetting
+
 * VLSM
 * IP Address Allocation
+* Subnet Masks
+* Network & Host Addressing
+
+### Routing
+
 * RIPv2
 * OSPF
 * EIGRP
 * Dynamic Routing
 * Routing Tables
 * Routing Protocol Verification
-* Network Troubleshooting
+* Neighbor Relationships
+
+### Troubleshooting
+
+* Interface Verification
+* VLAN Verification
+* Trunk Verification
 * Connectivity Testing
+* Ping
+* Traceroute
+* Routing Table Analysis
 
 ---
 
 # 🎯 Purpose of This Repository
 
-The purpose of this repository is to document my **hands-on networking practice** and maintain a reference for Cisco IOS commands and Packet Tracer configurations.
+This repository serves as a practical record of my **Cisco networking journey** and a personal reference for Cisco IOS commands, Packet Tracer configurations, and troubleshooting techniques.
 
-It can also be used as a quick revision guide when reviewing:
+It can also be used as a quick revision guide for:
 
-**VLAN → VLSM → RIP → OSPF → EIGRP → Routing Verification → Troubleshooting**
+**VLAN → Inter-VLAN Routing → VLSM → RIP → OSPF → EIGRP → Verification → Troubleshooting**
 
 ---
 
-## 🚀 Future Labs
+# 🚀 Future Labs
 
-More networking and cybersecurity labs will be added as I continue learning and practicing:
+More networking and cybersecurity labs will be added as I continue learning and practicing.
+
+Planned topics include:
 
 * Static Routing
-* Inter-VLAN Routing
 * DHCP
 * NAT
 * ACLs
@@ -366,6 +478,7 @@ More networking and cybersecurity labs will be added as I continue learning and 
 * Advanced OSPF
 * Network Security
 * Cisco Troubleshooting
+* Additional Packet Tracer Topologies
 
 ---
 
@@ -373,6 +486,6 @@ More networking and cybersecurity labs will be added as I continue learning and 
 
 **Mashhood Ali Khan**
 
-Cybersecurity Student | Networking Enthusiast
+**Cybersecurity Student | Networking Enthusiast**
 
 > Learning networking by building, configuring, testing, and troubleshooting real-world-style topologies in Cisco Packet Tracer.
