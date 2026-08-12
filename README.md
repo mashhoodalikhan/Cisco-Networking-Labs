@@ -1,399 +1,342 @@
-# ⚡ Cisco Networking Labs — Build. Break. Verify. Repeat.
+# ⚡ Cisco Networking Labs
+### Build. Break. Verify. Understand.
 
 <p align="center">
-  <strong>🛡️ Cybersecurity Student • 🌐 Networking Enthusiast • 💻 Cisco IOS • 🔬 Packet Tracer</strong>
+  <strong>🛡️ Cybersecurity Student &nbsp;•&nbsp; 🌐 Networking Enthusiast &nbsp;•&nbsp; 💻 Cisco IOS &nbsp;•&nbsp; 🔬 Packet Tracer</strong>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Cisco-Packet%20Tracer-1f2937?style=for-the-badge&logo=cisco&logoColor=white">
-  <img src="https://img.shields.io/badge/Networking-Labs-0f766e?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Cybersecurity-Practical%20Learning-7c3aed?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Status-Actively%20Learning-16a34a?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Cisco-Packet%20Tracer-1f2937?style=for-the-badge&logo=cisco&logoColor=white" alt="Cisco Packet Tracer">
+  <img src="https://img.shields.io/badge/Networking-Practical%20Labs-0f766e?style=for-the-badge" alt="Networking Labs">
+  <img src="https://img.shields.io/badge/Cybersecurity-Hands--On-7c3aed?style=for-the-badge" alt="Cybersecurity">
+  <img src="https://img.shields.io/badge/Status-Actively%20Learning-16a34a?style=for-the-badge" alt="Actively Learning">
 </p>
 
-> **Not just commands. Not just diagrams.**
-> 
-> **Configure it → verify it → troubleshoot it → understand why it works.**
+<p align="center">
+  <em>Not just commands. Not just diagrams.</em><br>
+  <strong>Configure → Verify → Test → Troubleshoot → Understand</strong>
+</p>
 
 ---
 
-## 🧠 What This Repository Is About
+## 🧭 Quick Navigation
 
-This is my **hands-on Cisco networking lab repository**, built while developing practical networking and cybersecurity skills.
-
-Instead of only reading theory, I use **Cisco Packet Tracer** to build topologies, configure Cisco IOS devices, test connectivity, verify protocols, and troubleshoot failures.
-
-The labs currently cover:
-
-- 🔀 **Switching & VLANs**
-- 🔗 **Inter-VLAN Routing**
-- ⚡ **EtherChannel & LACP**
-- 🧩 **VLSM & IP Addressing**
-- 🛣️ **RIPv2**
-- 🧭 **OSPF**
-- 🚀 **EIGRP**
-- 🔍 **Verification & Troubleshooting**
-
-The objective is simple:
-
-**Understand the network from configuration to packet flow — not just memorize commands.**
+**[⚡ Lab Map](#-lab-map)** •
+**[🗂️ Repository Structure](#️-repository-structure)** •
+**[🔥 Visual Proof](#-visual-proof-of-work)** •
+**[🧪 Labs](#-hands-on-labs)** •
+**[🛠️ CLI Reference](#️-quick-cisco-ios-reference)** •
+**[🔍 Verification](#-verification-workflow)** •
+**[🧠 Concepts](#-concepts-practiced)** •
+**[📈 Roadmap](#-learning-roadmap)**
 
 ---
 
-## 📊 Current Lab Map
+# 🧠 What This Repository Is
 
-| Area | Labs |
+This repository is my **hands-on Cisco networking lab portfolio**, built while developing practical networking and cybersecurity skills.
+
+Instead of only studying networking theory, I use **Cisco Packet Tracer** to build topologies, configure Cisco IOS devices, test connectivity, verify protocol behavior, and troubleshoot failures.
+
+### Current focus
+
+| Domain | Practical Work |
 | :--- | :--- |
-| 🔀 Switching | VLAN, Trunking, Inter-VLAN Routing |
-| ⚡ Link Aggregation | EtherChannel, LACP, Port-Channel |
-| 🧩 Subnetting | VLSM, IP Address Allocation |
-| 🛣️ Dynamic Routing | RIPv2, OSPF, EIGRP |
-| 🔍 Operations | IOS Verification, Connectivity Testing, Troubleshooting |
+| 🔀 **Switching** | VLANs, access ports, trunks, 802.1Q |
+| 🔗 **Inter-VLAN** | Router-on-a-Stick, sub-interfaces, gateway communication |
+| ⚡ **Link Aggregation** | EtherChannel, LACP, Port-Channel |
+| 🌳 **Loop Prevention** | STP / RSTP concepts and verification |
+| 🧩 **Subnetting** | VLSM, subnet masks, IP allocation |
+| 🛣️ **Routing** | RIPv2, OSPF, EIGRP |
+| 🔍 **Operations** | IOS verification, connectivity testing, troubleshooting |
 
----
-
-## 📌 Repository Overview & Visual Proofs
-
-| Category | Lab Topic | Protocol / Concept | Topology Preview | Lab Files & Visuals |
-| :--- | :--- | :--- | :--- | :--- |
-| **Switching** | Virtual Local Area Network | VLAN Segmentation & Trunking (802.1Q) | <img src="./01-Switching/VLAN%20images/vlan%201.png" width="280px" alt="VLAN Topology"> | [📁 Lab File](./01-Switching/VLAN%20lab.pkt)<br>[🖼️ Screenshots](./01-Switching/VLAN%20images/) |
-| **Switching** | Inter-VLAN Routing | Router-on-a-Stick, 802.1Q & VLAN Communication | <img src="./01-Switching/inter%20VLAN%20images/inter%20vlan%201.png" width="280px" alt="Inter-VLAN Topology"> | [📁 Lab File](./01-Switching/Inter-VLAN%20Routing.pkt)<br>[🖼️ Screenshots](./01-Switching/inter%20VLAN%20images/) |
-| **Switching** | EtherChannel with LACP | LACP, Link Aggregation & Port-Channel | <img src="./01-Switching/EtherChannel-LACP/lacp1.png" width="280px" alt="LACP Topology"> | [📁 Lab File](./01-Switching/EtherChannel-LACP/LACP%20lab.pkt)<br>[🖼️ Screenshots](./01-Switching/EtherChannel-LACP/) |
-| **Subnetting** | Variable Length Subnet Masking | VLSM & IP Address Allocation | <img src="./02-Subnetting/VLSM%20images/vlsm%201.png" width="280px" alt="VLSM Topology"> | [📁 Lab File](./02-Subnetting/VLSM%20lab.pkt)<br>[🖼️ Screenshots](./02-Subnetting/VLSM%20images/) |
-| **Routing** | Routing Information Protocol | RIPv2 Distance Vector | <img src="./03-Routing/RIP%20images/rip1.jpg" width="280px" alt="RIP Topology"> | [📁 Lab File](./03-Routing/RIP%20Lab.pkt)<br>[🖼️ Screenshots](./03-Routing/RIP%20images/) |
-| **Routing** | Open Shortest Path First | OSPF Single-Area Link-State | <img src="./03-Routing/OSPF%20images/ospf1.jpg" width="280px" alt="OSPF Topology"> | [📁 Lab File](./03-Routing/ospf%20lab.pkt)<br>[🖼️ Screenshots](./03-Routing/OSPF%20images/) |
-| **Routing** | Enhanced Interior Gateway Routing Protocol | EIGRP / Multi-Router Setup | <img src="./03-Routing/EIGRP%20images/eigrp1.jpg" width="280px" alt="EIGRP Topology"> | [📁 Lab File](./03-Routing/dynamic%20routing.pkt)<br>[🖼️ Screenshots](./03-Routing/EIGRP%20images/) |
-
----
-
-## 🗂️ Repository Structure
-
-```text
-Cisco-Packet-Tracer-Labs/
-│
-├── 01-Switching/
-│   ├── VLAN lab.pkt
-│   ├── VLAN images/
-│   │   └── vlan 1.png
-│   │
-│   ├── Inter-VLAN Routing.pkt
-│   ├── inter VLAN images/
-│   │   ├── inter vlan 1.png
-│   │   └── inter vlan 2.png
-│   │
-│   └── EtherChannel-LACP/
-│       ├── LACP lab.pkt
-│       ├── lacp1.png
-│       ├── lacp2.png
-│       └── lacp3.png
-│
-├── 02-Subnetting/
-│   ├── VLSM lab.pkt
-│   └── VLSM images/
-│
-├── 03-Routing/
-│   ├── RIP Lab.pkt
-│   ├── ospf lab.pkt
-│   ├── dynamic routing.pkt
-│   ├── RIP images/
-│   ├── OSPF images/
-│   └── EIGRP images/
-│
-└── README.md
-```
-
----
-
-# 🔥 Proof of Work
-
-Every lab is backed by a **Packet Tracer topology and visual verification** where available.
-
-### ⚡ EtherChannel + LACP
-
-<p align="center">
-  <img src="./01-Switching/EtherChannel-LACP/lacp1.png" width="31%" alt="LACP Topology">
-  <img src="./01-Switching/EtherChannel-LACP/lacp2.png" width="31%" alt="LACP Verification">
-  <img src="./01-Switching/EtherChannel-LACP/lacp3.png" width="31%" alt="LACP Configuration">
-</p>
-
-**Focus:** link aggregation, LACP negotiation, Port-Channel formation and verification.
-
----
-
-## 🎯 My Networking Workflow
-
-```text
-┌──────────────┐
-│  Build Lab   │
-└──────┬───────┘
-       ↓
-┌──────────────┐
-│ Configure    │
-│ Cisco IOS    │
-└──────┬───────┘
-       ↓
-┌──────────────┐
-│ Verify State │
-│ & Protocols  │
-└──────┬───────┘
-       ↓
-┌──────────────┐
-│ Test Traffic │
-│ / Connectivity│
-└──────┬───────┘
-       ↓
-┌──────────────┐
-│ Troubleshoot │
-│ if needed    │
-└──────┬───────┘
-       ↓
-┌──────────────┐
-│ Document It  │
-└──────────────┘
-```
-
-> **A topology is not finished when the configuration is typed.  
+> ### ⚔️ The rule
+> **A lab is not finished when the configuration is typed.  
 > It is finished when the behavior is verified.**
 
 ---
 
-# 🛠️ Key CLI Configurations
+# ⚡ Lab Map
 
-## 1. VLAN & Trunking
+<p align="center">
 
-VLANs (**Virtual Local Area Networks**) logically divide a network into separate broadcast domains.
+| # | Area | Lab | Core Skills | Status |
+| :---: | :--- | :--- | :--- | :---: |
+| 01 | 🔀 Switching | **VLAN** | Segmentation, Access Ports, Trunks | ✅ |
+| 02 | 🔀 Switching | **Inter-VLAN Routing** | 802.1Q, Router-on-a-Stick | ✅ |
+| 03 | ⚡ Switching | **EtherChannel + LACP** | Link Aggregation, Port-Channel | ✅ |
+| 04 | 🌳 Switching | **STP / RSTP** | Loop Prevention, Redundancy | ✅ |
+| 05 | 🧩 Subnetting | **VLSM** | Efficient IP Allocation | ✅ |
+| 06 | 🛣️ Routing | **RIPv2** | Distance-Vector Routing | ✅ |
+| 07 | 🧭 Routing | **OSPF** | Link-State, Area 0 | ✅ |
+| 08 | 🚀 Routing | **EIGRP** | Dynamic Routing, Neighbors | ✅ |
 
-### Create VLAN
+</p>
 
-```bash
+---
+
+# 🔥 Visual Proof of Work
+
+The repository is organized around **actual Packet Tracer work and verification evidence**, not just theory.
+
+## ⚡ EtherChannel + LACP
+
+<p align="center">
+  <img src="./01-Switching/EtherChannel-LACP/lacp1.png" width="31%" alt="LACP topology">
+  <img src="./01-Switching/EtherChannel-LACP/lacp2.png" width="31%" alt="LACP verification">
+  <img src="./01-Switching/EtherChannel-LACP/lacp3.png" width="31%" alt="LACP configuration">
+</p>
+
+**Focus:** LACP negotiation, member links, Port-Channel formation, and verification.
+
+### 🌳 STP / RSTP
+
+The STP/RSTP lab is stored separately so the switching section stays easy to navigate:
+
+**`01-Switching/STP-RSTP-Lab/`**
+
+It contains the Packet Tracer lab plus multiple verification screenshots and an **STP vs RSTP** visual reference.
+
+---
+
+# 🗂️ Repository Structure
+
+```text
+Cisco-Networking-Labs/
+│
+├── 📄 README.md
+│
+├── 🔀 01-Switching/
+│   │
+│   ├── 📁 VLAN images/
+│   │   └── vlan 1.png
+│   ├── 📦 VLAN lab.pkt
+│   │
+│   ├── 📁 inter VLAN images/
+│   │   ├── inter vlan 1.png
+│   │   └── inter vlan 2.png
+│   ├── 📦 Inter-VLAN Routing.pkt
+│   │
+│   ├── 📁 EtherChannel-LACP/
+│   │   ├── 📦 LACP lab.pkt
+│   │   ├── 🖼️ lacp1.png
+│   │   ├── 🖼️ lacp2.png
+│   │   └── 🖼️ lacp3.png
+│   │
+│   └── 📁 STP-RSTP-Lab/
+│       ├── 📦 STP LAB
+│       ├── 🖼️ STP AND RSTP 1
+│       ├── 🖼️ STP AND RSTP 2
+│       ├── 🖼️ STP AND RSTP 3
+│       ├── 🖼️ STP AND RSTP 4
+│       ├── 🖼️ STP AND RSTP 5
+│       └── 🖼️ STP VS RSTP
+│
+├── 🧩 02-Subnetting/
+│   ├── 📦 VLSM lab.pkt
+│   └── 📁 VLSM images/
+│
+└── 🛣️ 03-Routing/
+    ├── 📦 RIP Lab.pkt
+    ├── 📦 ospf lab.pkt
+    ├── 📦 dynamic routing.pkt
+    ├── 📁 RIP images/
+    ├── 📁 OSPF images/
+    └── 📁 EIGRP images/
+```
+
+> **Organization principle:** each major networking domain has its own top-level folder, while larger labs keep their screenshots and supporting evidence inside dedicated lab folders.
+
+---
+
+# 🧪 Hands-On Labs
+
+<details>
+<summary><strong>🔀 01 — VLAN & Trunking</strong></summary>
+
+### What I practiced
+- VLAN creation
+- VLAN segmentation
+- Access ports
+- Trunk ports
+- 802.1Q trunking
+- VLAN verification
+
+### Core commands
+
+```text
 Switch# configure terminal
 Switch(config)# vlan 10
 Switch(config-vlan)# name IT_Dept
 Switch(config-vlan)# exit
-```
 
-### Configure Access Port
-
-```bash
 Switch(config)# interface FastEthernet 0/1
 Switch(config-if)# switchport mode access
 Switch(config-if)# switchport access vlan 10
-Switch(config-if)# exit
-```
 
-### Configure Trunk Port
-
-```bash
 Switch(config)# interface GigabitEthernet 0/1
 Switch(config-if)# switchport mode trunk
-Switch(config-if)# exit
 ```
 
-### Verify VLANs
+### Verify
 
-```bash
+```text
 Switch# show vlan brief
-```
-
-### Verify Trunk
-
-```bash
 Switch# show interfaces trunk
 ```
 
----
+</details>
 
-# 2. Inter-VLAN Routing — Router-on-a-Stick
+<details>
+<summary><strong>🔗 02 — Inter-VLAN Routing</strong></summary>
 
-Inter-VLAN Routing allows devices belonging to **different VLANs** to communicate with each other through a Layer 3 device.
+### What I practiced
+- Router-on-a-Stick
+- Router sub-interfaces
+- 802.1Q encapsulation
+- Default gateways
+- Inter-VLAN communication
 
-This lab uses the **Router-on-a-Stick** method, where one physical router interface is divided into multiple sub-interfaces.
+### Example
 
-Each sub-interface is associated with a VLAN and acts as its **default gateway**.
-
-### Configure Router Sub-Interfaces
-
-```bash
+```text
 Router# configure terminal
 
 Router(config)# interface GigabitEthernet 0/0.10
 Router(config-subif)# encapsulation dot1Q 10
 Router(config-subif)# ip address 192.168.1.1 255.255.255.0
-Router(config-subif)# exit
 
 Router(config)# interface GigabitEthernet 0/0.20
 Router(config-subif)# encapsulation dot1Q 20
 Router(config-subif)# ip address 192.168.2.1 255.255.255.0
-Router(config-subif)# exit
-
-Router(config)# interface GigabitEthernet 0/0.30
-Router(config-subif)# encapsulation dot1Q 30
-Router(config-subif)# ip address 192.168.3.1 255.255.255.0
-Router(config-subif)# exit
 ```
 
-### Configure Switch Trunk
+### Verify
 
-```bash
-Switch# configure terminal
-Switch(config)# interface GigabitEthernet 0/1
-Switch(config-if)# switchport mode trunk
-Switch(config-if)# exit
-```
-
-### Verify VLANs
-
-```bash
-Switch# show vlan brief
-```
-
-### Verify Trunk
-
-```bash
-Switch# show interfaces trunk
-```
-
-### Verify Router Interfaces
-
-```bash
+```text
 Router# show ip interface brief
-```
-
-### Verify Routing Table
-
-```bash
 Router# show ip route
-```
-
-### Test Inter-VLAN Connectivity
-
-```bash
 PC> ping <destination-ip>
 ```
 
-A successful ping between devices in different VLANs confirms that **Inter-VLAN Routing** is functioning correctly.
+</details>
 
-### 🖼️ Lab Screenshots
+<details>
+<summary><strong>⚡ 03 — EtherChannel with LACP</strong></summary>
 
-<p align="center">
-  <img src="./01-Switching/inter%20VLAN%20images/inter%20vlan%201.png" width="45%" alt="Inter-VLAN Lab 1">
-  <img src="./01-Switching/inter%20VLAN%20images/inter%20vlan%202.png" width="45%" alt="Inter-VLAN Lab 2">
-</p>
+### What I practiced
+- EtherChannel
+- LACP negotiation
+- Member interfaces
+- Port-Channel
+- Link aggregation
+- Verification
 
----
+### Example
 
-# 3. EtherChannel with LACP
-
-**EtherChannel** combines multiple physical switch links into a single logical link called a **Port-Channel**.
-
-**LACP (Link Aggregation Control Protocol)** is used to dynamically negotiate and form an EtherChannel between compatible devices.
-
-This lab demonstrates **LACP-based link aggregation** in Cisco Packet Tracer.
-
-### Configure LACP on Member Interfaces
-
-```bash
+```text
 Switch# configure terminal
 
 Switch(config)# interface range FastEthernet 0/1 - 2
 Switch(config-if-range)# channel-group 1 mode active
 Switch(config-if-range)# exit
-```
 
-The `active` mode enables **LACP negotiation** on the selected interfaces.
-
-### Configure the Port-Channel
-
-```bash
 Switch(config)# interface Port-channel 1
 Switch(config-if)# switchport mode trunk
-Switch(config-if)# exit
 ```
 
-> The exact interface numbers and Layer 2 settings should match the topology used in the Packet Tracer lab.
+### Verify
 
-### Verify EtherChannel
-
-```bash
+```text
 Switch# show etherchannel summary
-```
-
-### Verify Port-Channel Interfaces
-
-```bash
 Switch# show interfaces port-channel 1
-```
-
-### Verify LACP Neighbors
-
-```bash
 Switch# show lacp neighbor
-```
-
-### Verify Interfaces
-
-```bash
 Switch# show interfaces status
 ```
 
-A successful EtherChannel verification should show the member interfaces associated with the **Port-Channel** and the LACP bundle operating correctly.
-
-### 🖼️ LACP Lab Screenshots
-
 <p align="center">
-  <img src="./01-Switching/EtherChannel-LACP/lacp1.png" width="45%" alt="LACP Lab Topology">
-  <img src="./01-Switching/EtherChannel-LACP/lacp2.png" width="45%" alt="LACP Verification">
+  <img src="./01-Switching/EtherChannel-LACP/lacp1.png" width="45%" alt="LACP topology">
+  <img src="./01-Switching/EtherChannel-LACP/lacp2.png" width="45%" alt="LACP verification">
 </p>
 
 <p align="center">
-  <img src="./01-Switching/EtherChannel-LACP/lacp3.png" width="55%" alt="LACP Configuration and Verification">
+  <img src="./01-Switching/EtherChannel-LACP/lacp3.png" width="55%" alt="LACP configuration">
 </p>
 
----
+> **Key idea:** multiple physical links can operate as one logical Port-Channel, while LACP handles dynamic negotiation.
 
-# 4. VLSM & IP Address Allocation
+</details>
 
-VLSM (**Variable Length Subnet Masking**) allows a network to use different subnet sizes according to the number of hosts required.
+<details>
+<summary><strong>🌳 04 — STP / RSTP</strong></summary>
 
-### Configure Sub-Interfaces
+### What I practiced
+- Spanning Tree concepts
+- Redundant switch links
+- Loop prevention
+- STP vs RSTP behavior
+- Verification and topology analysis
 
-```bash
+### Lab folder
+
+```text
+01-Switching/STP-RSTP-Lab/
+```
+
+The folder contains the Packet Tracer topology, five supporting screenshots, and an STP vs RSTP visual comparison.
+
+### Useful verification commands
+
+```text
+Switch# show spanning-tree
+Switch# show spanning-tree summary
+Switch# show interfaces status
+```
+
+> **Key idea:** redundancy is useful only when the network can control Layer-2 loops.
+
+</details>
+
+<details>
+<summary><strong>🧩 05 — VLSM & IP Address Allocation</strong></summary>
+
+### What I practiced
+- Variable Length Subnet Masking
+- Host requirements
+- Subnet masks
+- Network and host addressing
+- Efficient address allocation
+
+### Example
+
+```text
 Router# configure terminal
 
 Router(config)# interface GigabitEthernet 0/0.10
 Router(config-subif)# encapsulation dot1Q 10
 Router(config-subif)# ip address 192.168.1.1 255.255.255.192
-Router(config-subif)# exit
-
-Router(config)# interface GigabitEthernet 0/0.20
-Router(config-subif)# encapsulation dot1Q 20
-Router(config-subif)# ip address 192.168.1.65 255.255.255.224
-Router(config-subif)# exit
 ```
 
-### Verify Interfaces
+### Verify
 
-```bash
+```text
 Router# show ip interface brief
-```
-
-### Verify Routing Table
-
-```bash
 Router# show ip route
 ```
 
----
+</details>
 
-# 5. RIPv2 Dynamic Routing
+<details>
+<summary><strong>🛣️ 06 — RIPv2 Dynamic Routing</strong></summary>
 
-RIP (**Routing Information Protocol**) is a distance-vector dynamic routing protocol.
+### What I practiced
+- RIPv2
+- Distance-vector routing
+- Dynamic route learning
+- Routing table verification
 
-### Configuration
-
-```bash
+```text
 Router# configure terminal
-
 Router(config)# router rip
 Router(config-router)# version 2
 Router(config-router)# network 192.168.10.0
@@ -401,13 +344,10 @@ Router(config-router)# network 10.0.0.0
 Router(config-router)# no auto-summary
 ```
 
-### Verify RIP
+### Verify
 
-```bash
+```text
 Router# show ip protocols
-```
-
-```bash
 Router# show ip route
 ```
 
@@ -417,35 +357,30 @@ RIP-learned routes are identified by:
 R
 ```
 
----
+</details>
 
-# 6. OSPF Single-Area Routing
+<details>
+<summary><strong>🧭 07 — OSPF Single-Area Routing</strong></summary>
 
-OSPF (**Open Shortest Path First**) is a link-state dynamic routing protocol.
+### What I practiced
+- OSPF
+- Link-state routing
+- Area 0
+- Neighbor relationships
+- Routing table verification
 
-This lab uses **Area 0**, the OSPF backbone area.
-
-### Configuration
-
-```bash
+```text
 Router# configure terminal
-
 Router(config)# router ospf 1
 Router(config-router)# network 192.168.1.0 0.0.0.255 area 0
 Router(config-router)# network 10.1.1.0 0.0.0.3 area 0
 ```
 
-### Verify OSPF
+### Verify
 
-```bash
+```text
 Router# show ip protocols
-```
-
-```bash
 Router# show ip ospf neighbor
-```
-
-```bash
 Router# show ip route
 ```
 
@@ -455,34 +390,30 @@ OSPF-learned routes are identified by:
 O
 ```
 
----
+</details>
 
-# 7. EIGRP Configuration
+<details>
+<summary><strong>🚀 08 — EIGRP</strong></summary>
 
-EIGRP (**Enhanced Interior Gateway Routing Protocol**) is a dynamic routing protocol developed by Cisco.
+### What I practiced
+- EIGRP
+- Dynamic routing
+- Neighbor relationships
+- Route verification
 
-### Configuration
-
-```bash
+```text
 Router# configure terminal
-
 Router(config)# router eigrp 10
 Router(config-router)# network 192.168.1.0 0.0.0.255
 Router(config-router)# network 10.0.0.0 0.0.0.3
 Router(config-router)# no auto-summary
 ```
 
-### Verify EIGRP
+### Verify
 
-```bash
+```text
 Router# show ip protocols
-```
-
-```bash
 Router# show ip eigrp neighbors
-```
-
-```bash
 Router# show ip route
 ```
 
@@ -492,238 +423,237 @@ EIGRP-learned routes are identified by:
 D
 ```
 
----
-
-# 🔍 Common Verification Commands
-
-### Check Interfaces
-
-```bash
-Router# show ip interface brief
-```
-
-### Check Routing Table
-
-```bash
-Router# show ip route
-```
-
-### Check Routing Protocols
-
-```bash
-Router# show ip protocols
-```
-
-### Test Connectivity
-
-```bash
-Router# ping <destination-ip>
-```
-
-### Trace Network Path
-
-```bash
-Router# traceroute <destination-ip>
-```
-
-### Check VLANs
-
-```bash
-Switch# show vlan brief
-```
-
-### Check Trunk Links
-
-```bash
-Switch# show interfaces trunk
-```
-
-### Check EtherChannel
-
-```bash
-Switch# show etherchannel summary
-```
-
-### Check LACP Neighbors
-
-```bash
-Switch# show lacp neighbor
-```
-
-### Check OSPF Neighbors
-
-```bash
-Router# show ip ospf neighbor
-```
-
-### Check EIGRP Neighbors
-
-```bash
-Router# show ip eigrp neighbors
-```
+</details>
 
 ---
 
-## 🧰 Verification Command Matrix
+# 🛠️ Quick Cisco IOS Reference
 
-| Goal | Cisco IOS Command |
+| Goal | Command |
 | :--- | :--- |
-| Check interface state | `show ip interface brief` |
-| Check VLANs | `show vlan brief` |
-| Check trunks | `show interfaces trunk` |
-| Check EtherChannel | `show etherchannel summary` |
-| Check LACP neighbors | `show lacp neighbor` |
-| Check routing table | `show ip route` |
-| Check routing protocols | `show ip protocols` |
-| Check OSPF neighbors | `show ip ospf neighbor` |
-| Check EIGRP neighbors | `show ip eigrp neighbors` |
-| Test connectivity | `ping <destination-ip>` |
-| Trace a path | `traceroute <destination-ip>` |
+| Interface state | `show ip interface brief` |
+| VLANs | `show vlan brief` |
+| Trunks | `show interfaces trunk` |
+| STP state | `show spanning-tree` |
+| STP summary | `show spanning-tree summary` |
+| EtherChannel | `show etherchannel summary` |
+| LACP neighbors | `show lacp neighbor` |
+| Port-Channel | `show interfaces port-channel 1` |
+| Routing table | `show ip route` |
+| Routing protocols | `show ip protocols` |
+| OSPF neighbors | `show ip ospf neighbor` |
+| EIGRP neighbors | `show ip eigrp neighbors` |
+| Connectivity | `ping <destination-ip>` |
+| Path tracing | `traceroute <destination-ip>` |
 
 ---
 
-# 🧪 Lab Verification Workflow
-
-After configuring a topology, follow this general workflow:
+# 🔍 Verification Workflow
 
 ```text
-1. Configure device interfaces
-        ↓
-2. Assign IP addresses
-        ↓
-3. Configure VLANs / Sub-Interfaces
-        ↓
-4. Configure trunk links / EtherChannel
-        ↓
-5. Configure routing protocol
-        ↓
-6. Verify interfaces
-        ↓
-7. Verify VLANs, trunks & EtherChannel
-        ↓
-8. Verify routing table
-        ↓
-9. Check routing neighbors
-        ↓
-10. Test connectivity using ping
-        ↓
-11. Use traceroute for path verification
+        ┌───────────────┐
+        │   BUILD LAB   │
+        └───────┬───────┘
+                ↓
+        ┌───────────────┐
+        │ CONFIGURE IOS │
+        └───────┬───────┘
+                ↓
+        ┌───────────────┐
+        │ VERIFY STATE  │
+        └───────┬───────┘
+                ↓
+        ┌───────────────┐
+        │ TEST TRAFFIC  │
+        └───────┬───────┘
+                ↓
+        ┌───────────────┐
+        │ FIND FAILURES │
+        └───────┬───────┘
+                ↓
+        ┌───────────────┐
+        │ TROUBLESHOOT  │
+        └───────┬───────┘
+                ↓
+        ┌───────────────┐
+        │ DOCUMENT PROOF│
+        └───────────────┘
 ```
+
+### My troubleshooting mindset
+
+**1. Is the interface up?**  
+→ `show ip interface brief`
+
+**2. Is the VLAN correct?**  
+→ `show vlan brief`
+
+**3. Is the trunk actually trunking?**  
+→ `show interfaces trunk`
+
+**4. Is the EtherChannel formed?**  
+→ `show etherchannel summary`
+
+**5. Is LACP negotiating?**  
+→ `show lacp neighbor`
+
+**6. Is STP behaving as expected?**  
+→ `show spanning-tree`
+
+**7. Is the route present?**  
+→ `show ip route`
+
+**8. Can the endpoint communicate?**  
+→ `ping`
+
+**9. Where does the path break?**  
+→ `traceroute`
 
 ---
 
 # 🧠 Concepts Practiced
 
 ### 🔀 Switching
+- VLAN configuration
+- VLAN segmentation
+- Access ports
+- Trunk ports
+- 802.1Q
+- Inter-VLAN Routing
+- Router-on-a-Stick
+- EtherChannel
+- LACP
+- Port-Channel
+- STP
+- RSTP
+- Layer-2 redundancy
+- Loop prevention
 
-* VLAN Configuration
-* VLAN Segmentation
-* Access Ports
-* Trunk Ports
-* 802.1Q Encapsulation
-* Inter-VLAN Routing
-* Router-on-a-Stick
-* Router Sub-Interfaces
-* VLAN Communication
-* EtherChannel
-* LACP (Link Aggregation Control Protocol)
-* Port-Channel
-* Link Aggregation
-* Switch Link Redundancy
+### 🧩 Subnetting
+- VLSM
+- IP address allocation
+- Subnet masks
+- Network addressing
+- Host addressing
 
-### Subnetting
+### 🛣️ Routing
+- RIPv2
+- OSPF
+- EIGRP
+- Dynamic routing
+- Routing tables
+- Routing protocol verification
+- Neighbor relationships
 
-* VLSM
-* IP Address Allocation
-* Subnet Masks
-* Network & Host Addressing
-
-### Routing
-
-* RIPv2
-* OSPF
-* EIGRP
-* Dynamic Routing
-* Routing Tables
-* Routing Protocol Verification
-* Neighbor Relationships
-
-### Troubleshooting
-
-* Interface Verification
-* VLAN Verification
-* Trunk Verification
-* EtherChannel Verification
-* LACP Verification
-* Connectivity Testing
-* Ping
-* Traceroute
-* Routing Table Analysis
+### 🔍 Troubleshooting
+- Interface verification
+- VLAN verification
+- Trunk verification
+- STP verification
+- EtherChannel verification
+- LACP verification
+- Routing verification
+- Connectivity testing
+- Ping
+- Traceroute
+- Routing table analysis
 
 ---
 
-# 📈 Learning Progression
+# 📈 Learning Roadmap
 
 ```text
-VLAN
-  ↓
-Trunking
-  ↓
-Inter-VLAN Routing
-  ↓
-EtherChannel / LACP
-  ↓
-VLSM & IP Addressing
-  ↓
-RIPv2 → OSPF → EIGRP
-  ↓
-Verification & Troubleshooting
-  ↓
-More Advanced Network & Security Labs
+                    NETWORKING FOUNDATIONS
+                             │
+                             ▼
+                    ┌─────────────────┐
+                    │ VLAN + TRUNKING │
+                    └────────┬────────┘
+                             ▼
+                  ┌──────────────────────┐
+                  │ INTER-VLAN ROUTING   │
+                  └──────────┬───────────┘
+                             ▼
+                ┌──────────────────────────┐
+                │ STP / RSTP               │
+                │ LOOP PREVENTION          │
+                └────────────┬─────────────┘
+                             ▼
+                ┌──────────────────────────┐
+                │ ETHERCHANNEL / LACP      │
+                │ LINK AGGREGATION         │
+                └────────────┬─────────────┘
+                             ▼
+                    ┌────────────────┐
+                    │ VLSM + IP PLAN │
+                    └───────┬────────┘
+                            ▼
+               ┌────────────────────────┐
+               │ RIPv2 → OSPF → EIGRP  │
+               └───────────┬────────────┘
+                           ▼
+                ┌───────────────────────┐
+                │ VERIFY + TROUBLESHOOT │
+                └───────────┬───────────┘
+                            ▼
+                 ┌─────────────────────┐
+                 │ ADVANCED NETWORKING │
+                 │ + CYBERSECURITY     │
+                 └─────────────────────┘
 ```
 
-This repository will grow as I move from **fundamentals → configuration → verification → troubleshooting → advanced networking and security**.
+---
+
+# 🧭 What Comes Next
+
+Planned expansion of this repository:
+
+- [ ] Static Routing
+- [ ] DHCP
+- [ ] NAT
+- [ ] ACLs
+- [ ] Advanced OSPF
+- [ ] More STP/RSTP scenarios
+- [ ] Advanced EtherChannel scenarios
+- [ ] Cisco troubleshooting scenarios
+- [ ] Network security labs
+- [ ] More realistic multi-router topologies
 
 ---
 
-# 🎯 Purpose of This Repository
+# 🎯 Why This Repository Exists
 
-This repository serves as a practical record of my **Cisco networking journey** and a personal reference for Cisco IOS commands, Packet Tracer configurations, and troubleshooting techniques.
+This is more than a collection of `.pkt` files.
 
-It can also be used as a quick revision guide for:
+It is a **practical record of the progression from networking fundamentals to more advanced networking and security concepts**.
 
-**VLAN → Inter-VLAN Routing → EtherChannel/LACP → VLSM → RIP → OSPF → EIGRP → Verification → Troubleshooting**
+The goal is to keep every lab:
 
----
+**Buildable → Configurable → Verifiable → Troubleshootable → Documented**
 
-# 🚀 Future Labs
+So when something breaks, the objective is not simply to make it green again.
 
-More networking and cybersecurity labs will be added as I continue learning and practicing.
-
-Planned topics include:
-
-* Static Routing
-* DHCP
-* NAT
-* ACLs
-* STP
-* Advanced OSPF
-* Network Security
-* Cisco Troubleshooting
-* Additional Packet Tracer Topologies
+> **Find the failure. Understand the failure. Fix the failure. Verify the fix.**
 
 ---
 
-## 👨‍💻 Author
+# 👨‍💻 Author
 
-**Mashhood Ali Khan**
+<p align="center">
+  <strong>Mashhood Ali Khan</strong><br>
+  Cybersecurity Student • Networking Enthusiast
+</p>
 
-**Cybersecurity Student | Networking Enthusiast**
+<p align="center">
+  <em>Learning networking by building, configuring, testing, breaking, troubleshooting, and rebuilding real-world-style topologies in Cisco Packet Tracer.</em>
+</p>
 
-> Learning networking by building, configuring, testing, breaking, troubleshooting, and rebuilding real-world-style topologies in Cisco Packet Tracer.
-
-### ⚔️ Mindset
-
-**Don't just make it work. Understand why it works — and know how to find it when it doesn't.**
+<p align="center">
+  <strong>⚔️ Don't just make it work. Understand why it works — and know how to find it when it doesn't.</strong>
+</p>
 
 ---
+
+<p align="center">
+  <sub>Built with Cisco Packet Tracer • Cisco IOS • Curiosity • Practice • Troubleshooting</sub>
+</p>
