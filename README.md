@@ -271,31 +271,30 @@ Ping Verification
 **Result:** Complete Packet Tracer topology showing the network design and connected devices.
 
 ---
-
-#### 3️⃣ VLAN & Trunk Verification
-
-<p align="center">
-  <img src="./01-Switching/Small-Office-Network/image3.png" width="85%" alt="VLAN and trunk verification">
-</p>
-
-**Result:** VLAN and trunk configuration verified through Cisco IOS output.
-
----
-
-#### 4️⃣ DHCP Bindings
-
-<p align="center">
-  <img src="./01-Switching/Small-Office-Network/image4.png" width="85%" alt="DHCP bindings verification">
-</p>
-
-**Result:** DHCP bindings confirm that clients received dynamically assigned addressing.
-
----
-
-#### 5️⃣ LACP EtherChannel Verification
-
-<p align="center">
-  <img src="./01-Switching/Small-Office-Network/image5.png" width="85%" alt="LACP EtherChannel verification">
+#### 3️⃣ VLAN & Trunk Verification 
+ 
+<p align="center"> 
+  <img src="./01-Switching/Small-Office-Network/image3.png" width="85%" alt="VLAN and trunk verification"> 
+</p> 
+ 
+**Result:** VLAN and trunk configuration verified through Cisco IOS output. 
+ 
+--- 
+ 
+#### 4️⃣ DHCP Bindings 
+ 
+<p align="center"> 
+  <img src="./01-Switching/Small-Office-Network/image4.jpeg" width="85%" alt="DHCP bindings verification"> 
+</p> 
+ 
+**Result:** DHCP bindings confirm that clients received dynamically assigned addressing. 
+ 
+--- 
+ 
+#### 5️⃣ LACP EtherChannel Verification 
+ 
+<p align="center"> 
+  <img src="./01-Switching/Small-Office-Network/image5.jpeg" width="85%" alt="LACP EtherChannel verification"> 
 </p>
 
 **Result:** LACP EtherChannel operation verified through Cisco IOS.
