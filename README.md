@@ -356,12 +356,12 @@ The README keeps the **visual-proof table at the top** and also gives each major
 
 <p align="center">
   <img src="./01-Switching/Small-Office-Network/image1.png" width="47%" alt="Inter-VLAN Ping">
-  <img src="./01-Switching/Small-Office-Network/image3.png" width="47%" alt="VLAN and Trunk Verification">
+  <img src="./01-Switching/Small-Office-Network/image3.jpeg" width="47%" alt="VLAN and Trunk Verification">
 </p>
 
 <p align="center">
-  <img src="./01-Switching/Small-Office-Network/image4.png" width="47%" alt="DHCP Bindings">
-  <img src="./01-Switching/Small-Office-Network/image5.png" width="47%" alt="LACP EtherChannel Verification">
+  <img src="./01-Switching/Small-Office-Network/image4.jpeg" width="47%" alt="DHCP Bindings">
+  <img src="./01-Switching/Small-Office-Network/image5.jpeg" width="47%" alt="LACP EtherChannel Verification">
 </p>
 
 **Lab:** [📁 Small Office Network](./01-Switching/Small-Office-Network/)
