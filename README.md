@@ -274,7 +274,7 @@ Ping Verification
 #### 3️⃣ VLAN & Trunk Verification 
  
 <p align="center"> 
-  <img src="./01-Switching/Small-Office-Network/image3.png" width="85%" alt="VLAN and trunk verification"> 
+  <img src="./01-Switching/Small-Office-Network/image3.jpeg" width="85%" alt="VLAN and trunk verification"> 
 </p> 
  
 **Result:** VLAN and trunk configuration verified through Cisco IOS output. 
