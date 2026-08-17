@@ -23,6 +23,7 @@
 
 **[📊 Lab Map](#-current-lab-map)** •
 **[🖼️ Visual Proof Table](#-repository-overview--visual-proofs)** •
+**[🏢 Enterprise Dual-Site Network](#-enterprise-dual-site-network)** •
 **[🏢 Small Office Network](#-small-office-network)** •
 **[📡 DHCP & DHCP Relay](#-dhcp--dhcp-relay)** •
 **[🖼️ Complete Gallery](#-complete-visual-gallery)** •
@@ -53,7 +54,10 @@ Instead of only reading theory, I use **Cisco Packet Tracer** to build topologie
 * 🚀 **EIGRP**
 * 📡 **DHCP**
 * 🔁 **DHCP Relay**
+* 🌐 **DNS**
+* 🖥️ **HTTP Web Services**
 * 🏢 **Small Office Network Design**
+* 🏢 **Enterprise Dual-Site Network Design**
 * 🔍 **Verification & Troubleshooting**
 
 > **The objective:** understand the network from configuration to packet flow — not just memorize commands.
@@ -62,19 +66,20 @@ Instead of only reading theory, I use **Cisco Packet Tracer** to build topologie
 
 # 📊 Current Lab Map
 
-|  #  | Area                | Lab                      | Core Skills                                     | Status |
-| :-: | :------------------ | :----------------------- | :---------------------------------------------- | :----: |
-|  01 | 🔀 Switching        | **VLAN & Trunking**      | Segmentation, Access Ports, 802.1Q              |    ✅   |
-|  02 | 🔗 Switching        | **Inter-VLAN Routing**   | Router-on-a-Stick, Sub-Interfaces               |    ✅   |
-|  03 | ⚡ Switching         | **EtherChannel + LACP**  | Link Aggregation, Port-Channel                  |    ✅   |
-|  04 | 🌳 Switching        | **STP / RSTP**           | Loop Prevention, Redundancy                     |    ✅   |
-|  05 | 🧩 Subnetting       | **VLSM**                 | Efficient IP Allocation                         |    ✅   |
-|  06 | 🛣️ Routing         | **RIPv2**                | Distance-Vector Routing                         |    ✅   |
-|  07 | 🧭 Routing          | **OSPF**                 | Link-State, Area 0                              |    ✅   |
-|  08 | 🚀 Routing          | **EIGRP**                | Dynamic Routing, Neighbors                      |    ✅   |
-|  09 | 📡 Network Services | **DHCP**                 | DHCP Pools, Dynamic IP Assignment               |    ✅   |
-|  10 | 🔁 Network Services | **DHCP Relay**           | DHCP Forwarding Across Networks                 |    ✅   |
-|  11 | 🏢 Networking       | **Small Office Network** | VLANs, Trunking, DHCP, LACP, Inter-VLAN Routing |    ✅   |
+|  #  | Area                | Lab                              | Core Skills                                                    | Status |
+| :-: | :------------------ | :------------------------------- | :------------------------------------------------------------- | :----: |
+|  01 | 🔀 Switching        | **VLAN & Trunking**              | Segmentation, Access Ports, 802.1Q                             |    ✅   |
+|  02 | 🔗 Switching        | **Inter-VLAN Routing**           | Router-on-a-Stick, Sub-Interfaces                              |    ✅   |
+|  03 | ⚡ Switching         | **EtherChannel + LACP**          | Link Aggregation, Port-Channel                                 |    ✅   |
+|  04 | 🌳 Switching        | **STP / RSTP**                   | Loop Prevention, Redundancy                                    |    ✅   |
+|  05 | 🧩 Subnetting       | **VLSM**                         | Efficient IP Allocation                                        |    ✅   |
+|  06 | 🛣️ Routing         | **RIPv2**                        | Distance-Vector Routing                                        |    ✅   |
+|  07 | 🧭 Routing          | **OSPF**                         | Link-State, Area 0                                             |    ✅   |
+|  08 | 🚀 Routing          | **EIGRP**                        | Dynamic Routing, Neighbors                                     |    ✅   |
+|  09 | 📡 Network Services | **DHCP**                         | DHCP Pools, Dynamic IP Assignment                              |    ✅   |
+|  10 | 🔁 Network Services | **DHCP Relay**                   | DHCP Forwarding Across Networks                                |    ✅   |
+|  11 | 🏢 Networking       | **Small Office Network**         | VLANs, Trunking, DHCP, LACP, Inter-VLAN Routing                |    ✅   |
+|  12 | 🏢 Enterprise       | **Enterprise Dual-Site Network** | OSPF Area 0, DHCP Relay, DNS, A-Record, CNAME, HTTP Web Portal |    ✅   |
 
 ---
 
@@ -84,19 +89,20 @@ Instead of only reading theory, I use **Cisco Packet Tracer** to build topologie
 >
 > Each major lab is presented with its **topic, protocol/concept, topology preview, and direct lab/screenshot location**.
 
-| Category             | Lab Topic                                  | Protocol / Concept                                   | Topology Preview                                                                                              | Lab Files & Visuals                                                                                                    |
-| :------------------- | :----------------------------------------- | :--------------------------------------------------- | :------------------------------------------------------------------------------------------------------------ | :--------------------------------------------------------------------------------------------------------------------- |
-| **Switching**        | Virtual Local Area Network                 | VLAN Segmentation & Trunking (802.1Q)                | <img src="./01-Switching/VLAN%20images/vlan%201.png" width="280px" alt="VLAN Topology">                       | [📁 Lab File](./01-Switching/VLAN%20lab.pkt)<br>[🖼️ Screenshots](./01-Switching/VLAN%20images/)                       |
-| **Switching**        | Inter-VLAN Routing                         | Router-on-a-Stick, 802.1Q & VLAN Communication       | <img src="./01-Switching/inter%20VLAN%20images/inter%20vlan%201.png" width="280px" alt="Inter-VLAN Topology"> | [📁 Lab File](./01-Switching/Inter-VLAN%20Routing.pkt)<br>[🖼️ Screenshots](./01-Switching/inter%20VLAN%20images/)     |
-| **Switching**        | EtherChannel with LACP                     | LACP, Link Aggregation & Port-Channel                | <img src="./01-Switching/EtherChannel-LACP/lacp1.png" width="280px" alt="LACP Topology">                      | [📁 Lab File](./01-Switching/EtherChannel-LACP/LACP%20lab.pkt)<br>[🖼️ Screenshots](./01-Switching/EtherChannel-LACP/) |
-| **Switching**        | STP / RSTP                                 | Loop Prevention & Layer-2 Redundancy                 | **See STP/RSTP gallery below**                                                                                | [📁 Lab Folder](./01-Switching/STP-RSTP-Lab/)                                                                          |
-| **Switching**        | **Small Office Network**                   | **VLANs, Trunking, DHCP, LACP & Inter-VLAN Routing** | <img src="./01-Switching/Small-Office-Network/image2.png" width="280px" alt="Small Office Network Topology">  | [📁 Lab Folder](./01-Switching/Small-Office-Network/)                                                                  |
-| **Network Services** | **DHCP**                                   | **Dynamic Host Configuration Protocol**              | <img src="./Services/DHCP.jpg" width="280px" alt="DHCP Lab">                                                  | [📁 DHCP Lab](./Services/DHCP%20lab.pkt)<br>[🖼️ DHCP Evidence](./Services/DHCP.jpg)                                   |
-| **Network Services** | **DHCP Relay**                             | **DHCP Forwarding Across Networks**                  | <img src="./Services/DHCP%20relay.jpg" width="280px" alt="DHCP Relay Lab">                                    | [📁 DHCP Relay Lab](./Services/DHCP%20relay%20lab.pkt)<br>[🖼️ DHCP Relay Evidence](./Services/DHCP%20relay.jpg)       |
-| **Subnetting**       | Variable Length Subnet Masking             | VLSM & IP Address Allocation                         | <img src="./02-Subnetting/VLSM%20images/vlsm%201.png" width="280px" alt="VLSM Topology">                      | [📁 Lab File](./02-Subnetting/VLSM%20lab.pkt)<br>[🖼️ Screenshots](./02-Subnetting/VLSM%20images/)                     |
-| **Routing**          | Routing Information Protocol               | RIPv2 Distance Vector                                | <img src="./03-Routing/RIP%20images/rip1.jpg" width="280px" alt="RIPv2 Topology">                             | [📁 Lab File](./03-Routing/RIP%20Lab.pkt)<br>[🖼️ Screenshots](./03-Routing/RIP%20images/)                             |
-| **Routing**          | Open Shortest Path First                   | OSPF Single-Area Link-State                          | <img src="./03-Routing/OSPF%20images/ospf1.jpg" width="280px" alt="OSPF Topology">                            | [📁 Lab File](./03-Routing/ospf%20lab.pkt)<br>[🖼️ Screenshots](./03-Routing/OSPF%20images/)                           |
-| **Routing**          | Enhanced Interior Gateway Routing Protocol | EIGRP / Multi-Router Setup                           | <img src="./03-Routing/EIGRP%20images/eigrp1.jpg" width="280px" alt="EIGRP Topology">                         | [📁 Lab File](./03-Routing/dynamic%20routing.pkt)<br>[🖼️ Screenshots](./03-Routing/EIGRP%20images/)                   |
+| Category             | Lab Topic                                  | Protocol / Concept                                       | Topology Preview                                                                                                                        | Lab Files & Visuals                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| :------------------- | :----------------------------------------- | :------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Switching**        | Virtual Local Area Network                 | VLAN Segmentation & Trunking (802.1Q)                    | <img src="./01-Switching/VLAN%20images/vlan%201.png" width="280px" alt="VLAN Topology">                                                 | [📁 Lab File](./01-Switching/VLAN%20lab.pkt)<br>[🖼️ Screenshots](./01-Switching/VLAN%20images/)                                                                                                                                                                                                                                                                                                                                                                          |
+| **Switching**        | Inter-VLAN Routing                         | Router-on-a-Stick, 802.1Q & VLAN Communication           | <img src="./01-Switching/inter%20VLAN%20images/inter%20vlan%201.png" width="280px" alt="Inter-VLAN Topology">                           | [📁 Lab File](./01-Switching/Inter-VLAN%20Routing.pkt)<br>[🖼️ Screenshots](./01-Switching/inter%20VLAN%20images/)                                                                                                                                                                                                                                                                                                                                                        |
+| **Switching**        | EtherChannel with LACP                     | LACP, Link Aggregation & Port-Channel                    | <img src="./01-Switching/EtherChannel-LACP/lacp1.png" width="280px" alt="LACP Topology">                                                | [📁 Lab File](./01-Switching/EtherChannel-LACP/LACP%20lab.pkt)<br>[🖼️ Screenshots](./01-Switching/EtherChannel-LACP/)                                                                                                                                                                                                                                                                                                                                                    |
+| **Switching**        | STP / RSTP                                 | Loop Prevention & Layer-2 Redundancy                     | **See STP/RSTP gallery below**                                                                                                          | [📁 Lab Folder](./01-Switching/STP-RSTP-Lab/)                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| **Switching**        | **Small Office Network**                   | **VLANs, Trunking, DHCP, LACP & Inter-VLAN Routing**     | <img src="./01-Switching/Small-Office-Network/image2.png" width="280px" alt="Small Office Network Topology">                            | [📁 Lab Folder](./01-Switching/Small-Office-Network/)                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| **Network Services** | **DHCP**                                   | **Dynamic Host Configuration Protocol**                  | <img src="./Services/DHCP.jpg" width="280px" alt="DHCP Lab">                                                                            | [📁 DHCP Lab](./Services/DHCP%20lab.pkt)<br>[🖼️ DHCP Evidence](./Services/DHCP.jpg)                                                                                                                                                                                                                                                                                                                                                                                      |
+| **Network Services** | **DHCP Relay**                             | **DHCP Forwarding Across Networks**                      | <img src="./Services/DHCP%20relay.jpg" width="280px" alt="DHCP Relay Lab">                                                              | [📁 DHCP Relay Lab](./Services/DHCP%20relay%20lab.pkt)<br>[🖼️ DHCP Relay Evidence](./Services/DHCP%20relay.jpg)                                                                                                                                                                                                                                                                                                                                                          |
+| **Subnetting**       | Variable Length Subnet Masking             | VLSM & IP Address Allocation                             | <img src="./02-Subnetting/VLSM%20images/vlsm%201.png" width="280px" alt="VLSM Topology">                                                | [📁 Lab File](./02-Subnetting/VLSM%20lab.pkt)<br>[🖼️ Screenshots](./02-Subnetting/VLSM%20images/)                                                                                                                                                                                                                                                                                                                                                                        |
+| **Routing**          | Routing Information Protocol               | RIPv2 Distance Vector                                    | <img src="./03-Routing/RIP%20images/rip1.jpg" width="280px" alt="RIPv2 Topology">                                                       | [📁 Lab File](./03-Routing/RIP%20Lab.pkt)<br>[🖼️ Screenshots](./03-Routing/RIP%20images/)                                                                                                                                                                                                                                                                                                                                                                                |
+| **Routing**          | Open Shortest Path First                   | OSPF Single-Area Link-State                              | <img src="./03-Routing/OSPF%20images/ospf1.jpg" width="280px" alt="OSPF Topology">                                                      | [📁 Lab File](./03-Routing/ospf%20lab.pkt)<br>[🖼️ Screenshots](./03-Routing/OSPF%20images/)                                                                                                                                                                                                                                                                                                                                                                              |
+| **Routing**          | Enhanced Interior Gateway Routing Protocol | EIGRP / Multi-Router Setup                               | <img src="./03-Routing/EIGRP%20images/eigrp1.jpg" width="280px" alt="EIGRP Topology">                                                   | [📁 Lab File](./03-Routing/dynamic%20routing.pkt)<br>[🖼️ Screenshots](./03-Routing/EIGRP%20images/)                                                                                                                                                                                                                                                                                                                                                                      |
+| **Enterprise**       | **Enterprise Dual-Site Network — Lab #12** | **OSPF Area 0, DHCP Relay, DNS, A-Record, CNAME & HTTP** | <img src="./Services/Enterprise-DNS-DHCP-Relay-OSPF/Screenshot%20(2407).png" width="280px" alt="Enterprise Dual-Site Network Topology"> | [📁 DNS LAB.pkt](./Services/Enterprise-DNS-DHCP-Relay-OSPF/DNS%20LAB.pkt)<br>[🖼️ Screenshot 2404](./Services/Enterprise-DNS-DHCP-Relay-OSPF/Screenshot%20%282404%29.png)<br>[🖼️ Screenshot 2405](./Services/Enterprise-DNS-DHCP-Relay-OSPF/Screenshot%20%282405%29.png)<br>[🖼️ Screenshot 2406](./Services/Enterprise-DNS-DHCP-Relay-OSPF/Screenshot%20%282406%29.png)<br>[🖼️ Screenshot 2407](./Services/Enterprise-DNS-DHCP-Relay-OSPF/Screenshot%20%282407%29.png) |
 
 ---
 
@@ -144,7 +150,14 @@ Cisco-Networking-Labs/
 │   ├── 📦 DHCP lab.pkt
 │   ├── 📦 DHCP relay lab.pkt
 │   ├── 🖼️ DHCP.jpg
-│   └── 🖼️ DHCP relay.jpg
+│   ├── 🖼️ DHCP relay.jpg
+│   │
+│   └── 🏢 Enterprise-DNS-DHCP-Relay-OSPF/
+│       ├── 📦 DNS LAB.pkt
+│       ├── 🖼️ Screenshot (2404).png
+│       ├── 🖼️ Screenshot (2405).png
+│       ├── 🖼️ Screenshot (2406).png
+│       └── 🖼️ Screenshot (2407).png
 │
 ├── 🧩 02-Subnetting/
 │   ├── 📦 VLSM lab.pkt
@@ -179,6 +192,190 @@ Every lab is backed by a **Packet Tracer topology and visual verification** wher
 
 ---
 
+# 🏢 Enterprise Dual-Site Network
+
+> **Lab #12 — Enterprise DNS, DHCP Relay & OSPF Integration**
+
+This lab combines multiple network services and routing concepts into a single **enterprise-style dual-site network**.
+
+The topology demonstrates how routing, centralized DHCP, DHCP Relay, DNS resolution and an HTTP web service can work together across different network segments.
+
+### 🎯 Lab Objectives
+
+* Configure **OSPF Single Area / Area 0**
+* Configure **DHCP Relay**
+* Forward DHCP requests using `ip helper-address 192.168.20.2`
+* Configure a centralized DHCP service
+* Configure DNS **A-Record**
+* Configure DNS **CNAME**
+* Host an HTTP Web Portal
+* Resolve `portal.enterprise.com`
+* Resolve `www.enterprise.com`
+* Verify end-to-end connectivity between network sites
+* Verify dynamic IP lease assignment
+* Verify DNS name resolution
+* Access the enterprise web portal through a browser
+
+### 🌐 Domain Setup
+
+| Domain                  | Record Type  | Destination             |
+| :---------------------- | :----------- | :---------------------- |
+| `portal.enterprise.com` | **A-Record** | `192.168.20.2`          |
+| `www.enterprise.com`    | **CNAME**    | `portal.enterprise.com` |
+
+The DNS configuration demonstrates the difference between a direct **A-Record** and an alias created using a **CNAME** record.
+
+### 📡 DHCP Relay
+
+The remote client network uses DHCP Relay to forward DHCP requests toward the centralized DHCP server.
+
+```bash
+ip helper-address 192.168.20.2
+```
+
+This allows DHCP clients on a different routed network to obtain their IP configuration from the DHCP server at `192.168.20.2`.
+
+### 🧭 OSPF Area 0
+
+The enterprise topology uses **OSPF Area 0** for dynamic routing between the sites.
+
+```text
+Enterprise Site A
+       │
+       │
+       │ OSPF Area 0
+       │
+       ▼
+   Routed Network
+       │
+       │
+       ▼
+Enterprise Site B
+       │
+       ├── DHCP Server
+       ├── DNS Server
+       └── HTTP Web Portal
+```
+
+### 🔄 Enterprise Network Flow
+
+```text
+DHCP Client
+     │
+     │ DHCP Broadcast
+     ▼
+Router / DHCP Relay
+     │
+     │ ip helper-address
+     ▼
+DHCP Server
+192.168.20.2
+     │
+     │ IP Lease
+     ▼
+DHCP Client
+     │
+     │ DNS Query
+     ▼
+DNS Server
+     │
+     ├── portal.enterprise.com
+     │       ↓
+     │   192.168.20.2
+     │
+     └── www.enterprise.com
+             ↓
+       portal.enterprise.com
+             ↓
+          192.168.20.2
+             │
+             ▼
+       HTTP Web Portal
+```
+
+---
+
+## 📦 Enterprise Dual-Site Lab Files
+
+**Folder:**
+
+`./Services/Enterprise-DNS-DHCP-Relay-OSPF/`
+
+**Packet Tracer File:**
+
+[📁 DNS LAB.pkt](./Services/Enterprise-DNS-DHCP-Relay-OSPF/DNS%20LAB.pkt)
+
+---
+
+## 🖼️ Enterprise Dual-Site Visual Proofs
+
+### 1️⃣ Web Browser Access
+
+<p align="center">
+  <img src="./Services/Enterprise-DNS-DHCP-Relay-OSPF/Screenshot%20(2404).png" width="90%" alt="Enterprise Web Browser Access">
+</p>
+
+**Evidence:** HTTP Web Portal successfully accessed through the enterprise domain.
+
+---
+
+### 2️⃣ CLI Ping & Dynamic IP Lease Verification
+
+<p align="center">
+  <img src="./Services/Enterprise-DNS-DHCP-Relay-OSPF/Screenshot%20(2405).png" width="90%" alt="CLI Ping and Dynamic IP Lease Verification">
+</p>
+
+**Evidence:** CLI connectivity testing and dynamically assigned IP address verification.
+
+---
+
+### 3️⃣ DNS Server Configuration — A-Record & CNAME
+
+<p align="center">
+  <img src="./Services/Enterprise-DNS-DHCP-Relay-OSPF/Screenshot%20(2406).png" width="90%" alt="DNS Server A Record and CNAME Configuration">
+</p>
+
+**Evidence:** DNS records configured for the enterprise web portal.
+
+```text
+portal.enterprise.com
+        │
+        └── A-Record → 192.168.20.2
+
+www.enterprise.com
+        │
+        └── CNAME → portal.enterprise.com
+```
+
+---
+
+### 4️⃣ Annotated Topology View
+
+<p align="center">
+  <img src="./Services/Enterprise-DNS-DHCP-Relay-OSPF/Screenshot%20(2407).png" width="90%" alt="Annotated Enterprise Dual-Site Network Topology">
+</p>
+
+**Evidence:** Annotated Packet Tracer topology showing the enterprise dual-site architecture.
+
+---
+
+## 🔍 Enterprise Dual-Site Verification Checklist
+
+| Component    | Verification                                 | Result |
+| :----------- | :------------------------------------------- | :----: |
+| OSPF         | Area 0 routing operation                     |    ✅   |
+| DHCP         | Dynamic IP assignment                        |    ✅   |
+| DHCP Relay   | `ip helper-address 192.168.20.2`             |    ✅   |
+| DNS A-Record | `portal.enterprise.com → 192.168.20.2`       |    ✅   |
+| DNS CNAME    | `www.enterprise.com → portal.enterprise.com` |    ✅   |
+| HTTP         | Web portal access                            |    ✅   |
+| Ping         | End-to-end connectivity                      |    ✅   |
+| Topology     | Dual-site architecture documented            |    ✅   |
+
+> **Lab #12 brings routing and network services together into one enterprise-style topology, demonstrating how DHCP, DNS, HTTP and OSPF operate as interconnected services rather than isolated configurations.**
+
+---
+
 # 📡 DHCP & DHCP Relay
 
 > **A dedicated Network Services section covering dynamic IP addressing and DHCP forwarding across routed networks.**
@@ -189,6 +386,7 @@ This repository includes separate Packet Tracer labs for:
 
 * 📡 **DHCP**
 * 🔁 **DHCP Relay**
+* 🏢 **Enterprise DHCP Relay Integration**
 
 The labs demonstrate the practical difference between providing DHCP service directly and forwarding DHCP requests across different networks.
 
@@ -534,6 +732,53 @@ The README keeps the **visual-proof table at the top** and also gives each major
 
 ---
 
+## 🏢 Enterprise Dual-Site Network — Lab #12
+
+<p align="center">
+  <img src="./Services/Enterprise-DNS-DHCP-Relay-OSPF/Screenshot%20(2407).png" width="90%" alt="Enterprise Dual-Site Network Topology">
+</p>
+
+### Web Browser Access
+
+<p align="center">
+  <img src="./Services/Enterprise-DNS-DHCP-Relay-OSPF/Screenshot%20(2404).png" width="85%" alt="Enterprise Web Browser Access">
+</p>
+
+### CLI Ping & Dynamic IP Lease Verification
+
+<p align="center">
+  <img src="./Services/Enterprise-DNS-DHCP-Relay-OSPF/Screenshot%20(2405).png" width="85%" alt="CLI Ping and Dynamic IP Lease Verification">
+</p>
+
+### DNS Server — A-Record & CNAME
+
+<p align="center">
+  <img src="./Services/Enterprise-DNS-DHCP-Relay-OSPF/Screenshot%20(2406).png" width="85%" alt="DNS Server A Record and CNAME">
+</p>
+
+### Annotated Topology
+
+<p align="center">
+  <img src="./Services/Enterprise-DNS-DHCP-Relay-OSPF/Screenshot%20(2407).png" width="85%" alt="Annotated Enterprise Dual-Site Topology">
+</p>
+
+**Lab:** [📁 DNS LAB.pkt](./Services/Enterprise-DNS-DHCP-Relay-OSPF/DNS%20LAB.pkt)
+
+**Folder:** `./Services/Enterprise-DNS-DHCP-Relay-OSPF/`
+
+**Core Protocols:** OSPF Area 0 • DHCP Relay • DNS • HTTP
+
+**DHCP Relay:** `ip helper-address 192.168.20.2`
+
+**DNS:**
+
+```text
+portal.enterprise.com → A-Record → 192.168.20.2
+www.enterprise.com    → CNAME   → portal.enterprise.com
+```
+
+---
+
 ## 🏢 Small Office Network
 
 <p align="center">
@@ -750,13 +995,13 @@ Router# show ip dhcp pool
 
 DHCP Relay allows DHCP requests to reach a DHCP server when the server and client are located on different IP networks.
 
-### Example Cisco IOS Configuration
+### Enterprise Dual-Site Configuration
 
 ```bash
 Router# configure terminal
 
 Router(config)# interface GigabitEthernet 0/0
-Router(config-if)# ip helper-address 192.168.20.10
+Router(config-if)# ip helper-address 192.168.20.2
 ```
 
 The `ip helper-address` command tells the router where to forward DHCP requests.
@@ -781,6 +1026,7 @@ Router / DHCP Relay
      │ Forwarded Request
      ▼
 DHCP Server
+192.168.20.2
      │
      │ DHCP Offer
      ▼
@@ -792,7 +1038,59 @@ DHCP Client
 
 ---
 
-## 6. Small Office Network — Combined Verification
+## 6. DNS — A-Record & CNAME
+
+DNS (**Domain Name System**) translates human-readable domain names into network addresses.
+
+### Enterprise DNS Records
+
+```text
+portal.enterprise.com
+        │
+        └── A-Record → 192.168.20.2
+
+www.enterprise.com
+        │
+        └── CNAME → portal.enterprise.com
+```
+
+### Purpose
+
+* **A-Record:** Directly maps `portal.enterprise.com` to `192.168.20.2`.
+* **CNAME:** Creates `www.enterprise.com` as an alias of `portal.enterprise.com`.
+
+This allows users to access the same HTTP web portal using either enterprise domain name.
+
+---
+
+## 7. HTTP Web Portal
+
+The Enterprise Dual-Site lab includes an HTTP Web Portal hosted at:
+
+```text
+portal.enterprise.com
+```
+
+The portal is accessed through DNS name resolution rather than requiring the client to enter the server IP directly.
+
+```text
+Client
+  │
+  │ DNS Query
+  ▼
+DNS Server
+  │
+  │ portal.enterprise.com
+  ▼
+192.168.20.2
+  │
+  ▼
+HTTP Web Portal
+```
+
+---
+
+## 8. Small Office Network — Combined Verification
 
 The Small Office Network combines several concepts into one practical workflow:
 
@@ -832,7 +1130,7 @@ PC> ping <destination-ip>
 
 ---
 
-## 7. VLSM & IP Address Allocation
+## 9. VLSM & IP Address Allocation
 
 VLSM (**Variable Length Subnet Masking**) allows different subnet sizes to be used according to host requirements.
 
@@ -843,7 +1141,7 @@ Router# show ip route
 
 ---
 
-## 8. RIPv2 Dynamic Routing
+## 10. RIPv2 Dynamic Routing
 
 ```bash
 Router# configure terminal
@@ -865,7 +1163,7 @@ RIP routes are identified by `R`.
 
 ---
 
-## 9. OSPF Single-Area Routing
+## 11. OSPF Single-Area Routing
 
 ```bash
 Router# configure terminal
@@ -885,7 +1183,7 @@ OSPF routes are identified by `O`.
 
 ---
 
-## 10. EIGRP
+## 12. EIGRP
 
 ```bash
 Router# configure terminal
@@ -972,11 +1270,11 @@ VLANs • Segmentation • Access Ports • Trunks • 802.1Q • Inter-VLAN Rou
 
 ### 📡 Network Services
 
-DHCP • DHCP Pools • DHCP Relay • DHCP Bindings • Dynamic IP Assignment • Default Gateway • DNS Configuration • `ip helper-address`
+DHCP • DHCP Pools • DHCP Relay • DHCP Bindings • Dynamic IP Assignment • Default Gateway • DNS • A-Records • CNAME • HTTP Web Services • `ip helper-address`
 
 ### 🏢 Network Design
 
-Small Office Network • VLAN Segmentation • Link Aggregation • Redundancy • Inter-VLAN Communication • End-to-End Connectivity
+Small Office Network • Enterprise Dual-Site Network • VLAN Segmentation • Link Aggregation • Redundancy • Inter-VLAN Communication • End-to-End Connectivity
 
 ### 🧩 Subnetting
 
@@ -984,11 +1282,11 @@ VLSM • IP Address Allocation • Subnet Masks • Network & Host Addressing
 
 ### 🛣️ Routing
 
-RIPv2 • OSPF • EIGRP • Dynamic Routing • Routing Tables • Neighbor Relationships
+RIPv2 • OSPF • OSPF Area 0 • EIGRP • Dynamic Routing • Routing Tables • Neighbor Relationships
 
 ### 🔍 Troubleshooting
 
-Interface Verification • VLAN Verification • Trunk Verification • STP Verification • EtherChannel Verification • LACP Verification • DHCP Verification • DHCP Relay Verification • Ping • Traceroute • Routing Table Analysis
+Interface Verification • VLAN Verification • Trunk Verification • STP Verification • EtherChannel Verification • LACP Verification • DHCP Verification • DHCP Relay Verification • DNS Verification • HTTP Verification • Ping • Traceroute • Routing Table Analysis
 
 ---
 
@@ -1015,6 +1313,10 @@ VLSM & IP Addressing
   ↓
 RIPv2 → OSPF → EIGRP
   ↓
+Enterprise Dual-Site Network
+  ↓
+DNS → DHCP Relay → HTTP
+  ↓
 Verification & Troubleshooting
   ↓
 Advanced Networking & Security
@@ -1039,6 +1341,9 @@ Planned expansion:
 * [ ] DHCP redundancy scenarios
 * [ ] Network redundancy scenarios
 * [ ] Larger enterprise-style Packet Tracer topologies
+* [ ] Advanced DNS scenarios
+* [ ] Enterprise web services
+* [ ] Multi-site enterprise routing scenarios
 
 ---
 
